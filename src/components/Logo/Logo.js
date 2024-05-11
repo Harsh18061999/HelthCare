@@ -5,7 +5,7 @@ function Logo() {
         <div className="col-xl-3 col-lg-2">
             <div className="logo">
                 <a href="index.html">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" className="log_image" />
                 </a>
             </div>
         </div>

@@ -1,4 +1,5 @@
-import logo from "../../Assets/img/footer_logo.png";
+import { Link } from "react-router-dom";
+import logo from "../../Assets/logo.png";
 function Footer() {
     return (
         <footer className="footer">
@@ -8,9 +9,9 @@ function Footer() {
                         <div className="col-xl-4 col-md-6 col-lg-4">
                             <div className="footer_widget">
                                 <div className="footer_logo">
-                                    <a href="#">
-                                        <img src={logo} alt="" />
-                                    </a>
+                                    <Link href="#">
+                                        <img src={logo} alt="" className="log_image" />
+                                    </Link>
                                 </div>
                                 <p>
                                     Firmament morning sixth subdue darkness
@@ -19,19 +20,19 @@ function Footer() {
                                 <div className="socail_links">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <Link href="#">
                                                 <i className="ti-facebook"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link href="#">
                                                 <i className="ti-twitter-alt"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link href="#">
                                                 <i className="fa fa-instagram"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -44,11 +45,11 @@ function Footer() {
                                     Departments
                                 </h3>
                                 <ul>
-                                    <li><a href="#">Eye Care</a></li>
-                                    <li><a href="#">Skin Care</a></li>
-                                    <li><a href="#">Pathology</a></li>
-                                    <li><a href="#">Medicine</a></li>
-                                    <li><a href="#">Dental</a></li>
+                                    <li><Link href="#">Eye Care</Link></li>
+                                    <li><Link href="#">Skin Care</Link></li>
+                                    <li><Link href="#">Pathology</Link></li>
+                                    <li><Link href="#">Medicine</Link></li>
+                                    <li><Link href="#">Dental</Link></li>
                                 </ul>
 
                             </div>
@@ -59,11 +60,11 @@ function Footer() {
                                     Useful Links
                                 </h3>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#"> Contact</a></li>
-                                    <li><a href="#"> Appointment</a></li>
+                                    <li><Link href="#">About</Link></li>
+                                    <li><Link href="#">Blog</Link></li>
+                                    <li><Link href="#">About</Link></li>
+                                    <li><Link href="#"> Contact</Link></li>
+                                    <li><Link href="#"> Appointment</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -88,7 +89,7 @@ function Footer() {
                         <div className="row">
                             <div className="col-xl-12">
                                 <p className="copy_right text-center">
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <Link href="https://colorlib.com" target="_blank">Colorlib</Link>
                                 </p>
                             </div>
                         </div>

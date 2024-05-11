@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -1248,6 +1246,7 @@ dl, ol, ul {
 /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_area .single_slider {
   height: 700px;
+  margin-top: 70px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1256,7 +1255,7 @@ dl, ol, ul {
 @media (max-width: 767px) {
   /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 420px;
+    /* height: 420px; */
   }
 }
 
@@ -1264,7 +1263,7 @@ dl, ol, ul {
 .slider_area .single_slider .slider_text h3 {
   color: #1F1F1F;
   font-family: "Poppins", sans-serif;
-  font-size: 70px;
+  font-size: 45px;
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: 300;
@@ -1323,8 +1322,8 @@ dl, ol, ul {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
 .welcome_docmed_area {
-  padding-top: 120px;
-  padding-bottom: 220px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 767px) {
@@ -2681,8 +2680,8 @@ dl, ol, ul {
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_department.scss */
 .our_department_area {
   background: #F5FBFF;
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* line 5, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_department.scss */
@@ -2909,8 +2908,8 @@ dl, ol, ul {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
 .expert_doctors_area {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_experts.scss */
@@ -6515,5 +6514,29 @@ a{
       right: 5px;
       top: -5px;
       padding-bottom: 3px;
+  }
+
+  .log_image{
+    width: 250px;
+  }
+
+  .list_type{
+    list-style-type: disc;
+  }
+
+  .core_image{
+    height: 235px;;
+  }
+  .slick-initialized .slick-slide {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .slick-arrow.slick-prev {
+    background: green;
+    border-radius:10px;
+  }
+  .slick-arrow.slick-next {
+    background: green;
+    border-radius:10px;
   }
   

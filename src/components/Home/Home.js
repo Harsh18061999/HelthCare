@@ -9,14 +9,15 @@ import image4 from "../../Assets/img/experts/4.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function Home() {
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
     };
     return (
         <Fragment>
@@ -26,68 +27,70 @@ function Home() {
                 <p>Core Values:</p>
             </div> */}
             <OurDepartment />
-            <div class="expert_doctors_area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="doctors_title mb-55">
+            <div className="expert_doctors_area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="doctors_title mb-55">
                                 <h3>Expert Doctors</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-12">
+                    <div className="row">
+                        <div className="col-xl-12">
                             <Slider {...settings}>
-                                <div class="single_expert mx-2">
-                                    <div class="expert_thumb">
-                                        <img src={image1} alt="" />
+                                <Link to="/doctors/1">
+                                    <div className="single_expert mx-2">
+                                        <div className="expert_thumb">
+                                            <img src={image1} alt="" />
+                                        </div>
+                                        <div className="experts_name text-center">
+                                            <h3>Mirazul Alom</h3>
+                                            <span>Neurologist</span>
+                                        </div>
                                     </div>
-                                    <div class="experts_name text-center">
-                                        <h3>Mirazul Alom</h3>
-                                        <span>Neurologist</span>
-                                    </div>
-                                </div>
-                                <div class="single_expert">
-                                    <div class="expert_thumb">
+                                </Link>
+                                <div className="single_expert">
+                                    <div className="expert_thumb">
                                         <img src={image2} alt="" />
                                     </div>
-                                    <div class="experts_name text-center">
+                                    <div className="experts_name text-center">
                                         <h3>Mirazul Alom</h3>
                                         <span>Neurologist</span>
                                     </div>
                                 </div>
-                                <div class="single_expert">
-                                    <div class="expert_thumb">
+                                <div className="single_expert">
+                                    <div className="expert_thumb">
                                         <img src={image3} alt="" />
                                     </div>
-                                    <div class="experts_name text-center">
+                                    <div className="experts_name text-center">
                                         <h3>Mirazul Alom</h3>
                                         <span>Neurologist</span>
                                     </div>
                                 </div>
-                                <div class="single_expert">
-                                    <div class="expert_thumb">
+                                <div className="single_expert">
+                                    <div className="expert_thumb">
                                         <img src={image4} alt="" />
                                     </div>
-                                    <div class="experts_name text-center">
+                                    <div className="experts_name text-center">
                                         <h3>Mirazul Alom</h3>
                                         <span>Neurologist</span>
                                     </div>
                                 </div>
-                                <div class="single_expert">
-                                    <div class="expert_thumb">
+                                <div className="single_expert">
+                                    <div className="expert_thumb">
                                         <img src={image1} alt="" />
                                     </div>
-                                    <div class="experts_name text-center">
+                                    <div className="experts_name text-center">
                                         <h3>Mirazul Alom</h3>
                                         <span>Neurologist</span>
                                     </div>
                                 </div>
-                                <div class="single_expert">
-                                    <div class="expert_thumb">
+                                <div className="single_expert">
+                                    <div className="expert_thumb">
                                         <img src={image1} alt="" />
                                     </div>
-                                    <div class="experts_name text-center">
+                                    <div className="experts_name text-center">
                                         <h3>Mirazul Alom</h3>
                                         <span>Neurologist</span>
                                     </div>

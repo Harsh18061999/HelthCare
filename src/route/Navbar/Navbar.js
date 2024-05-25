@@ -1,34 +1,73 @@
-import React, { useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Logo from "../../components/Logo/Logo";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import "./navbar.css"; // Import CSS file for styling
+import { MenuItem } from "./NavItem/MenuItem";
+import { MobileMenu } from "./MobileMenu";
 
-function NavBar() {
-    return (
-        <header>
+const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <Fragment>
+      <header>
         <div className="header-area">
-          <div id="sticky-header" className="main-header-area sticky">
+          <div className="header-top_area">
             <div className="container">
-              <div className="row align-items-center">
-                {/* Logo component */}
-                <Logo />
-  
-                {/* Main Menu */}
-                <div className="col-xl-6 col-lg-7">
-                  <div className="main-menu  d-none d-lg-block">
-                    <nav>
-                      <ul id="navigation">
-                        <li><Link to="/" className="active">home</Link></li>
-                        <li><Link to="/department">Department</Link></li>
-                        <li>
-                          <Link to="/">blog <i className="ti-angle-down"></i></Link>
-                        </li>
-                        <li><Link to="/doctors">Doctors</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                      </ul>
-                    </nav>
+              <div className="row">
+                {/* Social Media Links */}
+                <div className="col-xl-4 col-md-4">
+                  <div className="social_media_links">
+                    <Link href="#"><i className="fab fa-linkedin "></i></Link>
+                    <Link href="#"><i className="fab fa-facebook "></i></Link>
+                    <Link href="#"><i className="fab fa-google-plus"></i></Link>
                   </div>
                 </div>
-  
+                {/* Contact Info */}
+                <div className="col-xl-8 col-md-8">
+                  <div className="short_contact_list">
+                    <ul>
+                      <li><Link href="#"><i class="fa fa-clock"></i> Mon - Fri 09:00 - 19:00</Link></li>
+                      <li><Link href="#"><i className="fa fa-envelope"></i> info@myfitboat.com</Link></li>
+                      <li><Link href="#"><i className="fa fa-phone"></i> 160160002</Link></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Main Header Area */}
+          <div id="sticky-header" className={`main-header-area ${isScrolled ? 'sticky' : ''}`}>
+            <div className="container">
+              <div className="row align-items-center">
+                {/* Logo Component */}
+                <Logo />
+                {/* Main Menu */}
+                <div className="col-xl-6 col-lg-7">
+                  <nav className="main-menu d-none d-lg-block">
+                    <ul id="navigation">
+                      <MenuItem to="/" text="Home" />
+                      <MenuItem to="/department" text="Department" />
+                      <MenuItem to="/" text="Blog" />
+                      <MenuItem to="/doctors" text="Doctors" />
+                      <MenuItem to="/contact" text="Contact" />
+                    </ul>
+                  </nav>
+                </div>
                 {/* Make an Appointment Button */}
                 <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                   <div className="Appointment">
@@ -37,41 +76,22 @@ function NavBar() {
                     </div>
                   </div>
                 </div>
-  
                 {/* Mobile Menu */}
                 <div className="col-12">
-                  <div className="mobile_menu d-block d-none">
-                    <div className="slicknav_menu">
-                      <Link to="#" aria-haspopup="true" role="button" tabIndex="0" className="slicknav_btn slicknav_collapsed">
-                        <span className="slicknav_menutxt">MENU</span>
-                        <span className="slicknav_icon">
-                          <span className="slicknav_icon-bar"></span>
-                          <span className="slicknav_icon-bar"></span>
-                          <span className="slicknav_icon-bar"></span>
-                        </span>
-                      </Link>
-                      <ul className="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu">
-                        <li>
-                          <Link to="/" className="active" role="menuitem" tabIndex="-1">home</Link>
-                        </li>
-                        <li><Link to="/department" role="menuitem" tabIndex="-1">Department</Link></li>
-                        <li className="slicknav_collapsed slicknav_parent">
-                          <Link to="/blog" role="menuitem" aria-haspopup="true" tabIndex="-1" className="slicknav_item slicknav_row">
-                           blog
-                          </Link>
-                        </li>
-                        <li><Link to="/doctors" role="menuitem" tabIndex="-1">Doctors</Link></li>
-                        <li><Link to="/contact" role="menuitem" tabIndex="-1">Contact</Link></li>
-                      </ul>
-                    </div>
-                  </div>
+                  <MobileMenu />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </header>
-    )
-}
+      <Outlet />
+    </Fragment>
+  );
+};
+
+
+
+
 
 export default NavBar;

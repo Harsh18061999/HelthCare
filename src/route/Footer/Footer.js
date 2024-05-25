@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
+import "./footer.css";
 function Footer() {
     return (
         <footer className="footer">
@@ -21,17 +22,17 @@ function Footer() {
                                     <ul>
                                         <li>
                                             <Link href="#">
-                                                <i className="ti-facebook"></i>
+                                                <i className="fab fa-facebook"></i>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#">
-                                                <i className="ti-twitter-alt"></i>
+                                                <i className="fab fa-twitter"></i>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#">
-                                                <i className="fa fa-instagram"></i>
+                                                <i className="fab fa-instagram"></i>
                                             </Link>
                                         </li>
                                     </ul>

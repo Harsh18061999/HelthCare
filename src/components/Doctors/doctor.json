@@ -1,0 +1,93 @@
+{
+    "doctors": [
+      {
+        "name": "Dr. Addison Smith",
+        "image": "images/1.jpg",
+        "specialty": "Cardiologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Dr. Sarah Taylor",
+        "image": "images/5.jpg",
+        "specialty": "Nephrologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Dr. Aiken Ward",
+        "image": "images/2.jpg",
+        "specialty": "Dermatologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Babatunde Jon",
+        "image": "images/3.jpg",
+        "specialty": "Endocrinologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Eachann Jhon",
+        "image": "images/4.jpg",
+        "specialty": "Gastroenterologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Daisy Gabriela",
+        "image": "images/6.jpg",
+        "specialty": "Endocrinologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Ronnie Aaron",
+        "image": "images/7.jpg",
+        "specialty": "Dermatologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      },
+      {
+        "name": "Edie Dee",
+        "image": "images/8.jpg",
+        "specialty": "Cardiologists",
+        "social": {
+          "facebook": "#",
+          "twitter": "#",
+          "linkedin": "#",
+          "instagram": "#"
+        }
+      }
+    ]
+  }
+  

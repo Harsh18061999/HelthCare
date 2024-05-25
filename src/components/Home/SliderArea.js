@@ -1,6 +1,8 @@
+import "./slidearea.css";
+
 const SliderArea = () =>{
     return (
-        <div className="slider_area mt-4">
+        <div className="slider_area">
         <div className="slider_active">
             <div className="single_slider  d-flex align-items-center slider_bg_2">
                 <div className="container">

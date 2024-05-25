@@ -4,6 +4,7 @@ import d2 from "../../Assets/img/department/2.png"
 import d3 from "../../Assets/img/department/8.jpg"
 import d4 from "../../Assets/img/department/9.webp"
 import d5 from "../../Assets/img/department/10.jpeg"
+import "./ourdepartment.css"
 
 const OurDepartment = () =>{
     return (

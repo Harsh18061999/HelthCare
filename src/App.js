@@ -11,13 +11,16 @@ import {
   Navigate
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Doctor from "./components/Doctors/Doctors";
 function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<NavBar />}>
+            <Route index element={<Home />}></Route>
+            <Route path="/doctors/*" element={<Doctor />}></Route>
+          </Route>
         </Routes>
         <Footer />
       </div>

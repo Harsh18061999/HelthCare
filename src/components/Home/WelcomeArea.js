@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import image1 from "../../Assets/img/about/1.png"
 import image2 from "../../Assets/img/about/2.png"
+import "./welcomearea.css"
 
 const WelocmeArea = () => {
     return (

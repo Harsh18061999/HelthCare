@@ -38,7 +38,7 @@ const doctorDetailsData = [{
     name: "Dr. Milind Tapodhan",
     specialization: "Practicing Ayurveda in synchronization with Astrology since 2010",
     image: DoctorImage1,
-    signature: "SignatureImage",
+    signature: SignatureImage,
     intro: "Ayurveda - Reg. No - GB - I - 17875. BAMS - Govt. Akhandanand Ayurved College, Ahmedabad",
     intro1: "Astrology - Certificate course and Diploma course in Medical Astrology - AADAR. Jyotish Gnyata and Jyotish Bhaskar - Gujarat University - First Rank. Conducted two Medical Astrology workshops for Ayurveda Doctors/Students with AADAR as an only Tutor.",
     intro2: "Speciality - Medical Astrology - can be used as preventive measures and supportive tool in the current disease",

@@ -277,4 +277,8 @@ Doctor Details Area CSS
     color: #ffffff;
     border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
   }
-  
+
+  .doctor_image{
+    height: 545px;
+    height: 351px;
+  }  

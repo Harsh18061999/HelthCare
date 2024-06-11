@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import FeedbackSection from "../FeedbackSection/FeedbackSection";
 import FAQSection from "../FAQSection/FAQSection";
 import doctor1 from "../../Assets/img/Doctor/docotr1.jpg";
+import doctor2 from "../../Assets/img/Doctor/doctor2.jpeg";
 
 function Home() {
     var settings = {
@@ -96,15 +97,17 @@ function Home() {
                                         </div>
                                     </div>
                                 </Link>
+                                <Link to="/doctors/2">
                                 <div className="single_expert">
                                     <div className="expert_thumb">
-                                        <img src={image2} alt="" />
+                                        <img src={doctor2} alt="" className="doctor_home_image" />
                                     </div>
                                     <div className="experts_name text-center">
-                                        <h3>Mirazul Alom</h3>
+                                        <h3>Dr. Milind Tapodhan</h3>
                                         <span>Neurologist</span>
                                     </div>
                                 </div>
+                                </Link>
                                 <div className="single_expert">
                                     <div className="expert_thumb">
                                         <img src={image3} alt="" />

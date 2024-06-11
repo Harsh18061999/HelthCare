@@ -1,10 +1,27 @@
 /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-    height: 700px;
+    height: calc(100vh - 10vh);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  .single_slider{
+    position: relative;
+    text-align: center;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+    color: white; /* text color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+ 
   
   @media (max-width: 767px) {
     /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
@@ -12,12 +29,31 @@
       /* height: 420px; */
     }
   }
+
+  .Appointment .book_btn a {
+    background: #faba0e;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    color: black;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  .Appointment .book_btn a:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #faba0e;
+  }
   
   /* line 17, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
-    color: #1F1F1F;
+    /* color: #28b93e;#faba0e */
+    color: #faba0e;
     font-family: "Poppins", sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: 300;
@@ -55,9 +91,10 @@
   .slider_area .single_slider .slider_text p {
     font-size: 18px;
     font-weight: 400;
-    color: #727272;
-    margin-bottom: 40px;
     margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    width: 75%;
   }
   
   @media (min-width: 992px) and (max-width: 1200px) {
@@ -72,4 +109,9 @@
     .slider_area .single_slider .slider_text p {
       font-size: 16px;
     }
+  }
+
+  .card-img-top{
+    width: 338px;
+    height: 324px;;
   }

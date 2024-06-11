@@ -24,17 +24,20 @@ const WelocmeArea = () => {
                             <h3>Global Holistic Healthcare Access</h3>
                             <p> Our vision is to revolutionize healthcare by making holistic treatment accessible to everyone, regardless of their geographical location or socioeconomic status. </p>
                             <ul>
-                                <li className="list_type"> 
-                                   Break geographical barriers through online platforms. 
+                                <li className="list_type">
+                                    Break geographical barriers through online platforms.
                                 </li>
-                                <li className="list_type"> 
+                                <li className="list_type">
                                     Enable access to holistic healthcare worldwide via the internet.
                                 </li>
                                 <li className="list_type">
-                                    Connect individuals with experienced practitioners globally through online networks. 
+                                    Connect individuals with experienced practitioners globally through online networks.
                                 </li>
                             </ul>
-                            <Link href="#" className="boxed-btn3-white-2 mt-4">Learn More</Link>
+                            <Link href="#" className="boxed-btn3-white-2 mt-4">
+                                <span className="mx-2">Learn More</span>
+                                <i className="fa-solid fa-circle-chevron-right  fa-xl pt-2"></i>
+                            </Link>
                         </div>
                     </div>
                 </div>

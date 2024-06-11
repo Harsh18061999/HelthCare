@@ -6,10 +6,16 @@ import image1 from "../../Assets/img/experts/1.png"
 import image2 from "../../Assets/img/experts/2.png"
 import image3 from "../../Assets/img/experts/3.png"
 import image4 from "../../Assets/img/experts/4.png"
+import step1 from "../../Assets/img/three_step/step1.jpg"
+import step2 from "../../Assets/img/three_step/step2.jpg"
+import step3 from "../../Assets/img/three_step/step3.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import FeedbackSection from "../FeedbackSection/FeedbackSection";
+import FAQSection from "../FAQSection/FAQSection";
+import doctor1 from "../../Assets/img/Doctor/docotr1.jpg";
 
 function Home() {
     var settings = {
@@ -26,12 +32,52 @@ function Home() {
             {/* <div className="container">
                 <p>Core Values:</p>
             </div> */}
+            <div className="three_step_process">
+                <div className="container">
+                <div className="row">
+                    <div className="col-xl-12">
+                        <div className="section_title text-center mb-55">
+                            <h3>Three Step Process</h3>
+                        </div>
+                    </div>
+                </div>
+                    <div className="row">
+                        <div className="col-12 col-md-4">
+                            <div className="card p-2">
+                                <div className="card-body text-center">
+                                    <p> 1. Book my appointment</p>
+                                </div>
+                                <img className="card-img-top" src={step1} alt="" />
+
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-4">
+                        <div className="card p-2">
+                                <div className="card-body text-center">
+                                    <p> 2. Talk to our expert doctors online</p>
+                                </div>
+                                <img className="card-img-top" src={step2} alt="" />
+
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-4">
+                        <div className="card p-2">
+                                <div className="card-body text-center">
+                                    <p> 3. Medication delivered at your door step</p>
+                                </div>
+                                <img  src={step3} alt="" className="card-img-top" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <OurDepartment />
             <div className="expert_doctors_area">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12">
-                            <div className="doctors_title mb-55">
+                            <div className="section_title doctors_title mb-55 text-center">
                                 <h3>Expert Doctors</h3>
                             </div>
                         </div>
@@ -42,10 +88,10 @@ function Home() {
                                 <Link to="/doctors/1">
                                     <div className="single_expert mx-2">
                                         <div className="expert_thumb">
-                                            <img src={image1} alt="" />
+                                            <img src={doctor1} alt="" className="doctor_home_image" />
                                         </div>
                                         <div className="experts_name text-center">
-                                            <h3>Mirazul Alom</h3>
+                                            <h3>Hetal Vaidya Trivedi</h3>
                                             <span>Neurologist</span>
                                         </div>
                                     </div>
@@ -100,6 +146,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <FeedbackSection/>
+            <FAQSection/>
         </Fragment>
     );
 }

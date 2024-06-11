@@ -1,5 +1,11 @@
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_department.scss */
 .our_department_area {
+   
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .three_step_process{
     background: #F5FBFF;
     padding-top: 60px;
     padding-bottom: 60px;

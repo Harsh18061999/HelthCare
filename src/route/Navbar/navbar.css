@@ -94,12 +94,12 @@
   
   /* line 85, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
   .header-area .main-header-area .Appointment .book_btn a {
-    background: #009DFF;
+    background: #faba0e;
     padding: 12px 26px;
     font-size: 14px;
     font-weight: 400;
     border: 1px solid transparent;
-    color: #fff;
+    color: black;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -115,8 +115,8 @@
   /* line 96, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
   .header-area .main-header-area .Appointment .book_btn a:hover {
     background: #fff;
-    color: #009DFF;
-    border: 1px solid #009DFF;
+    color: #faba0e;
+    border: 1px solid #faba0e;
   }
   
   /* line 104, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
@@ -437,7 +437,7 @@
 }
 
 .log_image{
-  width: 175px;
+  width: 140px;
 }
 
 .list_type{
@@ -454,4 +454,9 @@
 
 .slick-next:before, .slick-prev:before {
   color: #2e8555 !important;
+}
+
+/* line 15, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_header.scss */
+.header-area .main-header-area {
+  background: #fff;
 }

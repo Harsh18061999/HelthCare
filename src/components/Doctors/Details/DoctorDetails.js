@@ -3,6 +3,7 @@ import "./detail.css";
 import image1 from "../../../Assets/img/Doctor/docotr1.jpg";
 import image2 from "../../../Assets/img/Doctor/signature.png";
 import AppointmentForm from '../Appoinment/AppointmentForm';
+import { Link } from 'react-router-dom';
 
 
 
@@ -43,10 +44,10 @@ const DoctorDetails = () => {
                                 <span>Cardiologist</span>
 
                                 <ul className="social">
-                                    <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                                    <li><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
+                                    <li><Link to="#"><i className="fab fa-twitter"></i></Link></li>
+                                    <li><Link to="#"><i className="fab fa-linkedin-in"></i></Link></li>
+                                    <li><Link to="#"><i className="fab fa-instagram"></i></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -89,20 +90,20 @@ const DoctorDetails = () => {
                                     <ul>
                                         <li>
                                             <div className="icon">
-                                            <i class="fas fa-user-md fa-xl"></i>
+                                            <i className="fas fa-user-md fa-xl"></i>
                                             </div>
                                             <span>Masters in Hospital Administration </span>
                                             Salt Lake City, Utah ( USA)
                                         </li>
                                         <li>
                                             <div className="icon">
-                                            <i class="fas fa-mortar-pestle fa-xl"></i>
+                                            <i className="fas fa-mortar-pestle fa-xl"></i>
                                             </div>
                                             <span>7th-Generation Ayurvedic Practitioner</span>
                                         </li>
                                         <li>
                                             <div className="icon">
-                                            <i class="fas fa-user-graduate fa-xl"></i>
+                                            <i className="fas fa-user-graduate fa-xl"></i>
                                             </div>
                                             <span>B.A.M.S Jamnagar </span>
                                         </li>

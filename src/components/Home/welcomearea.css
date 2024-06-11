@@ -110,7 +110,7 @@
   .welcome_docmed_area .welcome_docmed_info h2 {
     font-size: 18px;
     font-weight: 400;
-    color: #1F1F1F;
+    color: #28b93e;
     margin-bottom: 40px;
     position: relative;
     z-index: 9;
@@ -125,7 +125,7 @@
     bottom: 0;
     height: 2px;
     width: 50px;
-    background: #5DB2FF;
+    background: #faba0e;
   }
   
   /* line 76, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
@@ -175,3 +175,41 @@
     color: #5DB2FF;
     font-weight: 16px;
   }
+
+  .boxed-btn3-white-2 {
+    color: black !important;
+    display: inline-block;
+    padding: 9px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #faba0e;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  /* line 108, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_btn.scss */
+.boxed-btn3-white-2:hover {
+  background: #faba0e;
+  color: black !important;
+  border: 1px solid transparent;
+}
+
+/* line 113, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_btn.scss */
+.boxed-btn3-white-2:focus {
+  outline: none;
+}
+
+/* line 116, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_btn.scss */
+.boxed-btn3-white-2.large-width {
+  width: 220px;
+}

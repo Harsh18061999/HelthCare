@@ -26,30 +26,7 @@ const NavBar = () => {
     <Fragment>
       <header>
         <div className="header-area">
-          <div className="header-top_area">
-            <div className="container">
-              <div className="row">
-                {/* Social Media Links */}
-                <div className="col-xl-4 col-md-4">
-                  <div className="social_media_links">
-                    <Link href="#"><i className="fab fa-linkedin "></i></Link>
-                    <Link href="#"><i className="fab fa-facebook "></i></Link>
-                    <Link href="#"><i className="fab fa-google-plus"></i></Link>
-                  </div>
-                </div>
-                {/* Contact Info */}
-                <div className="col-xl-8 col-md-8">
-                  <div className="short_contact_list">
-                    <ul>
-                      <li><Link href="#"><i class="fa fa-clock"></i> Mon - Fri 09:00 - 19:00</Link></li>
-                      <li><Link href="#"><i className="fa fa-envelope"></i> info@myfitboat.com</Link></li>
-                      <li><Link href="#"><i className="fa fa-phone"></i> 160160002</Link></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
           {/* Main Header Area */}
           <div id="sticky-header" className={`main-header-area ${isScrolled ? 'sticky' : ''}`}>
             <div className="container">
@@ -72,7 +49,7 @@ const NavBar = () => {
                 <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                   <div className="Appointment">
                     <div className="book_btn d-none d-lg-block">
-                      <Link to="#test-form" className="popup-with-form">Make an Appointment</Link>
+                      <Link to="#test-form" className="popup-with-form">Book an Appointment</Link>
                     </div>
                   </div>
                 </div>
